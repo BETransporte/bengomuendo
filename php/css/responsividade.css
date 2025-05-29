@@ -1,0 +1,22 @@
+@media (max-width: 960px) {
+
+    form {
+        width: 80%;
+    }
+
+    form img {
+        width: 20%;
+    }
+
+    form input {
+        width: 80%;
+    }
+
+    form button {
+        width: 80%;
+    }
+
+    form p {
+        text-align: center;
+    }
+}

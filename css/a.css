@@ -1,0 +1,90 @@
+/* Adicionando sombra e efeito de hover nos cards */
+.card-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-item img {
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.card-item:hover img {
+    transform: scale(1.1);
+}
+
+
+/* Animação para citações e depoimentos */
+.dica p {
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Efeito suave no cabeçalho */
+#header {
+    animation: fadeInHeader 2s ease-in-out;
+}
+
+@keyframes fadeInHeader {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+footer {
+    background-color: #2e8b57;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer .logo img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+footer .centro {
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+footer .up a {
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}

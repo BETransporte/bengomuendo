@@ -1,0 +1,78 @@
+/* responsivo.css */
+
+/* Reseta margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout mobile */
+@media (max-width: 768px) {
+    /* Ajustes no header */
+    #header {
+        height: auto;
+        padding-top: 2%;
+    }
+    .container {
+        padding: 20px;
+    }
+
+    .logo-text h2 {
+        font-size: 20px;
+    }
+
+    .logo-text p {
+        font-size: 14px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Menu mobile */
+    .menu-mob {
+        display: block;
+        text-align: center;
+    }
+
+    /* Ajustes no conteúdo da seção quadro */
+    .quadro {
+        font-size: 14px;
+    }
+
+    .text h2 {
+        font-size: 18px;
+    }
+
+    .title, .description {
+        font-size: 14px;
+    }
+
+    .imagens {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagens img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+}
+
+/* Resposta para tablets e screens médios */
+@media (max-width: 1024px) {
+    .quadro {
+        font-size: 16px;
+    }
+    .container {
+        padding: 30px;
+    }
+}

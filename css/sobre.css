@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header a {
+    color: white;
+}
+
+header {
+    background: url('/src/economia/economia8.jpg') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 1%;
+}
+
+header .container {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+ul {
+    font-size: 16px;
+    display: flex;
+}
+
+ul li {
+    margin: 0 30px;
+}
+
+ul li:hover {
+    transform: translate(.8px, .8px);
+}
+
+ul button {
+    width: 150px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #2e8b57;
+}
+
+ul button a {
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu-mob {
+    cursor: pointer;
+    display: none;
+}
+
+
+/* main part of project */
+
+main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 13pc;
+}
+
+main .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main h1 {
+    width: 80%;
+    font-size: 4.5rem;
+    margin: 10px;
+}
+
+main p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: initial;
+    margin: 10px;
+}
+
+main p span {
+    text-decoration: underline;
+    font-weight: 600;
+    /* color: rgb(9, 231, 9); */
+}
+
+main .btn-main {
+    width: 18%;
+    height: 50px;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    background-color: #a1a1a1;
+    cursor: pointer;
+    margin: 10px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+.informacao {
+    margin: 60px 0;
+    padding: 0 5%;
+    cursor: pointer;
+}
+
+.informacao .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.informacao .item-info {
+    background-color: #ccc;
+    width: 30%;
+    padding: 6px;
+    height: 320px;
+    border-radius: 6px;
+}
+
+.informacao .item-info:hover {
+    background-color: #ddd;
+    transition: 1s;
+}
+
+.item-questao p {
+    padding: 5px;
+}
+
+.questionario {
+    width: 100%;
+    margin: 60px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.questionario .container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.questionario .item-questao {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    width: 100%;
+    height: 2%;
+    padding: 2px;
+    border-radius: 6px;
+    background-color: #ccc;
+}
+
+.item-questao button {
+    border: none;
+    margin-left: 20px;
+    background-color: #ccc;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.item-questao:not(:first-child) {
+    margin-top: -50px;
+}
+
+.resposta1,
+.resposta2,
+.resposta3,
+.resposta4,
+.resposta5 {
+    background-color: #ddd;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 10px;
+    color: #212121;
+    visibility: hidden;
+    margin-top: -15px;
+}
+
+.resposta6 {
+    margin-top: -16px;
+    background-color: #ddd;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 10px;
+    color: #212121;
+    visibility: hidden;
+}
+
+.resposta1.mostrar {
+    transition: .6s;
+    visibility: visible;
+    margin-bottom: 60px;
+}
+
+.resposta2.mostrar {
+    transition: .6s;
+    visibility: visible;
+    margin-bottom: 60px;
+}
+
+.resposta3.mostrar {
+    transition: .6s;
+    visibility: visible;
+    margin-bottom: 60px;
+}
+
+.resposta4.mostrar {
+    transition: .6s;
+    visibility: visible;
+    margin-bottom: 60px;
+}
+
+.resposta5.mostrar {
+    transition: .6s;
+    visibility: visible;
+    margin-bottom: 60px;
+}
+
+.resposta6.mostrar {
+    transition: .6s;
+    visibility: visible;
+    margin-bottom: 20px;
+}
+
+/* footer ou rodapé */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    background-color: #2e8b57;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
